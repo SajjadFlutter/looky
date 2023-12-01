@@ -62,7 +62,7 @@ class BottomNavItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         // change index
-        BlocProvider.of<ChangeIndexCubit>(context).changeIndexEvent(index);
+        BlocProvider.of<ChangeIndexCubit>(context).changeIndex(index);
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
