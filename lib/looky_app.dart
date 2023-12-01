@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'common/cubit/change_index_cubit/cubit/change_index_cubit.dart';
 import 'presentation/home/view/page.dart';
 
 class LookyApp extends StatelessWidget {
@@ -7,10 +9,13 @@ class LookyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Looky',
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
+    return BlocProvider(
+      create: (context) => ChangeIndexCubit(),
+      child: const MaterialApp(
+        title: 'Looky',
+        debugShowCheckedModeBanner: false,
+        home: HomePage(),
+      ),
     );
   }
 }
