@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 16.0,
                       ),
                     ),
-                    const SizedBox(height: 100.0),
+                    const SizedBox(height: 50.0),
                   ],
                 ),
               ],

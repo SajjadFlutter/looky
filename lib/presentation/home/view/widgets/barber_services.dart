@@ -46,8 +46,8 @@ class BarberServices extends StatelessWidget {
 
   Shimmer _loadingWidget() {
     return Shimmer.fromColors(
-      baseColor: Colors.grey,
-      highlightColor: Colors.grey.shade100,
+      baseColor: Colors.grey.shade400,
+      highlightColor: Colors.white,
       child: Padding(
         padding: const EdgeInsets.only(top: 5.0),
         child: Row(
