@@ -3,7 +3,7 @@ import 'package:looky/common/widgets/bottom_nav.dart';
 import 'package:looky/presentation/home/view/widgets/info_app.dart';
 
 import 'widgets/barbers_list.dart';
-import 'widgets/categories.dart';
+import 'widgets/barber_services.dart';
 import 'widgets/nearby_you.dart';
 import 'widgets/search_field.dart';
 
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 30.0),
                     SearchField(controller: _searchController),
                     const SizedBox(height: 20.0),
-                    const Categories(),
+                    const BarberServices(),
                     const SizedBox(height: 30.0),
                     NearbyYou(width: width),
                     const SizedBox(height: 30.0),
